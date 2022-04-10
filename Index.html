@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width">
+        <title>Survey form</title>
+        <link rel="stylesheet" href="Custom.css" type="text/css">
+    </head>
+        <body>
+            <div class="company_name">
+              <h3> &nbsp;&nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+              </svg>ROYAL HUB</h3>
+            </div>
+            <div class="container">
+                <header class="header">
+                <h1 id="title" class="text-center">Survey Form</h1>
+                <p id="description" class="description text-center">
+                    Thanks for taking the time to complete this survey, we really appreciate it
+                </p>
+                </header>
+                <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-control"
+                    placeholder="Enter your name"
+                    required
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Enter your Email"
+                    required
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number"
+                    >Age<span class="clue"></span></label
+                    >
+                    <input
+                    type="number"
+                    name="age"
+                    id="number"
+                    min="10"
+                    max="99"
+                    class="form-control"
+                    placeholder="Age"
+                    />
+                </div>
+                <div class="form-group">
+                    <p>How did you learn about Royal hub?</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Please select</option>
+                    <option value="friend">Through a friend</option>
+                    <option value="WhatsApp">WhatsApp</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="Telegram">Telegram</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="other">Other</option>
+                    </select>
+                </div>
+            
+                <div class="form-group">
+                    <p>Would you recommend Royal hub to a friend?</p>
+                    <label>
+                    <input
+                        name="user-recommend"
+                        value="definitely"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                    />Definitely</label
+                    >
+                    <label>
+                    <input
+                        name="user-recommend"
+                        value="maybe"
+                        type="radio"
+                        class="input-radio"
+                    />Maybe</label
+                    >
+            
+                    <label
+                    ><input
+                        name="user-recommend"
+                        value="not-sure"
+                        type="radio"
+                        class="input-radio"
+                    />Not sure</label
+                    >
+                </div>
+            
+                <div class="form-group">
+                    <p>
+                    Do you purchase goods from Royal hub?
+                    </p>
+                    <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Please select</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    </select>
+                </div>
+            
+                <div class="form-group">
+                    <p>Do you have any suggestions or comment?</p>
+                    <textarea
+                    id="comments"
+                    class="input-textarea"
+                    name="comment"
+                    placeholder="Enter..."
+                    ></textarea>
+                </div>
+            
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                    Submit
+                    </button>
+                </div>
+                </form>
+            </div>
+    </body>
+</html>
+  
